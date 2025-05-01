@@ -20,11 +20,11 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
 *.lcov
 
 # nyc test coverage
-.nyc_output
+.nyc_output/
 
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
@@ -36,6 +36,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
+build/
 build/Release
 
 # Dependency directories
@@ -89,7 +90,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+dist/
 
 # Gatsby files
 .cache/
@@ -129,8 +130,27 @@ dist
 .vscode-test
 
 # yarn v2
+.yarn/
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Temporary files
+*.tmp
+*~
+
+# Yarn
+.yarnrc
+yarn.lock
+
+# Dependencies
+package-lock.json
